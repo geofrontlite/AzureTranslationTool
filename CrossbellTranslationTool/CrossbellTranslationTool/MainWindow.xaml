@@ -1,0 +1,35 @@
+﻿<Window x:Class="CrossbellTranslationTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrossbellTranslationTool"
+        mc:Ignorable="d"
+        Title="Azure Translation Tool" Height="440" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Azure Translation Tool" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="A fork of FramtzX/CrossbellTranslationTool" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF5A5A5A"/>
+        
+        <Button Content="Extract" HorizontalAlignment="Right" Margin="0,100,100,0" VerticalAlignment="Top" FontSize="20" Padding="40,14,40,14" Click="PrepExtract"/>
+        <Button Content="Build" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" FontSize="20" Padding="40,14,40,14" Click="PrepBuild"/>
+
+        <Grid x:Name="paths" Visibility="Hidden">
+            <Label x:Name="label1" Content="Game install data folder:" HorizontalAlignment="Left" Margin="12,180,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <TextBox x:Name="path_1" HorizontalAlignment="Left" Margin="180,184,0,0" Text="Path" TextWrapping="NoWrap" VerticalAlignment="Top" Width="320" FontSize="14"/>
+            <Button Content="Browse" HorizontalAlignment="Right" Margin="0,182,10,0" VerticalAlignment="Top" FontSize="16" Padding="4,1,4,1" Click="OpenDialog1"/>
+
+            <Label x:Name="label2" Content="Export location:" HorizontalAlignment="Left" Margin="12,210,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <TextBox x:Name="path_2" HorizontalAlignment="Left" Margin="180,214,0,0" Text="Path" TextWrapping="NoWrap" VerticalAlignment="Top" Width="320" FontSize="14"/>
+            <Button Content="Browse" HorizontalAlignment="Right" Margin="0,212,10,0" VerticalAlignment="Top" FontSize="16" Padding="4,1,4,1" Click="OpenDialog2"/>
+
+            <Button x:Name="run_build" Content="Run Build" HorizontalAlignment="Left" Margin="20,240,0,0" VerticalAlignment="Top" FontSize="16" Padding="10,1,10,1" Click="Build"/>
+            <Button x:Name="run_extraction" Content="Run Extraction" HorizontalAlignment="Left" Margin="20,240,0,0" VerticalAlignment="Top" FontSize="16" Padding="10,1,10,1" Click="Extract"/>
+        </Grid>
+
+        <Label Content="Console" HorizontalAlignment="Right" Margin="0,0,40,118" VerticalAlignment="Bottom" Foreground="#FF464646"/>
+        <Rectangle HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="120" Width="560" Stroke="#66000000"></Rectangle>
+        <ScrollViewer Height="120" Width="560" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBlock x:Name="console" HorizontalAlignment="Left" Margin="2,0,2,0" Text="No errors" TextWrapping="Wrap" VerticalAlignment="Top" Padding="2,2,2,2" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LI+AhRweR0wucs0kgsr4qHiLvr2po1oRg6u03/w/+Yud9Nc7VZEuhzNAKZjmWn8g3J5BnvbRN7R3/P3HXR1vgQ==",
+  "success": true,
+  "projectFilePath": "D:\\Wheat\\Documents\\Kiseki\\Ao no Kiseki\\CrossbellTranslationTool\\CrossbellTranslationTool\\CrossbellTranslationTool\\CrossbellTranslationTool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wheat\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0-preview.2.20160.6\\microsoft.netcore.platforms.5.0.0-preview.2.20160.6.nupkg.sha512",
+    "C:\\Users\\Wheat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Wheat\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0-preview.2.20160.6\\system.runtime.compilerservices.unsafe.5.0.0-preview.2.20160.6.nupkg.sha512",
+    "C:\\Users\\Wheat\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0-preview.2.20160.6\\system.text.encoding.codepages.5.0.0-preview.2.20160.6.nupkg.sha512"
+  ],
+  "logs": []
+}

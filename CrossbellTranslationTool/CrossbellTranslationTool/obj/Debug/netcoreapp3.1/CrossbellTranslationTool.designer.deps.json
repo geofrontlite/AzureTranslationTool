@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.NETCore.Platforms/5.0.0-preview.2.20160.6": {},
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0-preview.2.20160.6": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.16006"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/5.0.0-preview.2.20160.6": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0-preview.2.20160.6",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0-preview.2.20160.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.16006"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.16006"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/5.0.0-preview.2.20160.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S6k9S3afzVzH987kuSwRJPa+5HN1gvBoeUdrNFPFfjUypMUE3NRFod8Gz+cTW5MXWPTgtibnk7nVYOSX3Om6KA==",
+      "path": "microsoft.netcore.platforms/5.0.0-preview.2.20160.6",
+      "hashPath": "microsoft.netcore.platforms.5.0.0-preview.2.20160.6.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0-preview.2.20160.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wZAKKvdMSgxyDKMDE2cAdRULqdREhx4N6k539XeS4h8vnnrSQSBMs+FJKyqoYp+mcTbQldWaf/0ucKUIbw3MYg==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0-preview.2.20160.6",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0-preview.2.20160.6.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/5.0.0-preview.2.20160.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kyRZ2p0/ABYNThE2WzpHNATxkvY3CdEODMWzRY/W8oOj8SQ7yBDe043fP59OW9fux/xO+rxO1DK4bwbdKwKmjA==",
+      "path": "system.text.encoding.codepages/5.0.0-preview.2.20160.6",
+      "hashPath": "system.text.encoding.codepages.5.0.0-preview.2.20160.6.nupkg.sha512"
+    }
+  }
+}
