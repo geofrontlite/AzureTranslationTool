@@ -1,8 +1,9 @@
-# Crossbell Translation Tool v1.7.0
+# Crossbell Translation Tool GUI v1.0.0
 A tool to assist with translating the PC game Ao no Kiseki.
 
 # Thank You!
 This tool can only exist due to https://github.com/Ouroboros/EDDecompiler/
+And thanks to the original author, FrantzX.
 
 ## What you can extract/translate with this tool
 + Items
