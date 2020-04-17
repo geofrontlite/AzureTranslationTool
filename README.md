@@ -1,4 +1,4 @@
-# Crossbell Translation Tool GUI v1.0.0
+# Crossbell Translation Tool GUI v2.0.0
 A tool to assist with translating the PC game Ao no Kiseki.
 
 # Thank You!
