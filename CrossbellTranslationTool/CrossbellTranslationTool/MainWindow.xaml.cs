@@ -59,17 +59,24 @@ namespace CrossbellTranslationTool
             String path = ((TextBox)this.FindName("path_1")).Text;
             String source = ((TextBox)this.FindName("path_2")).Text;
 
+#if DEBUG
+            Actions.Build.Run(path, source);
+#else
             try
             {
                 if (Directory.Exists(path) && Directory.Exists(source))
                 {
-                    Actions.Build.Run(source, path);
+                    Actions.Build.Run(path, source);
                 }
             }
             catch (Exception ex)
-            {
+            { 
                 ((TextBlock)this.FindName("console")).Text = ex.Message + "\n\n" + ex.StackTrace;
+                return;
             }
+#endif
+
+            ((TextBlock)this.FindName("console")).Text = "Extraction complete!";
         }
 
         public void Build(Object sender, RoutedEventArgs e)
@@ -77,6 +84,9 @@ namespace CrossbellTranslationTool
             String path = ((TextBox)this.FindName("path_1")).Text;
             String source = ((TextBox)this.FindName("path_2")).Text;
 
+#if DEBUG
+            Actions.Build.Run(source, path);
+#else
             try
             {
                 if (Directory.Exists(path) && Directory.Exists(source))
@@ -87,7 +97,10 @@ namespace CrossbellTranslationTool
             catch (Exception ex)
             { 
                 ((TextBlock)this.FindName("console")).Text = ex.Message + "\n\n" + ex.StackTrace;
+                return;
             }
+#endif
+            ((TextBlock)this.FindName("console")).Text = "Build complete!";
         }
 
         public void OpenDialog1(Object sender, RoutedEventArgs e)

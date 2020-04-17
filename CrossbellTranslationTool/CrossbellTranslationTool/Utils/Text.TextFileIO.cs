@@ -60,6 +60,12 @@ namespace CrossbellTranslationTool.Text
 
 				reader.Position = stringpointer.Value;
 				var oldstr = reader.ReadString();
+
+				if (lineindex + 1 > lines.Count)
+				{
+					continue;
+				}
+
 				var newstr = lines[lineindex++];
 
 				if (newstr == "") continue;
